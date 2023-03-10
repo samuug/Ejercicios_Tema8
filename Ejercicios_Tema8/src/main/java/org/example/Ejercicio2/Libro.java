@@ -31,4 +31,9 @@ public class Libro extends Obra{
         int paginas = sc.nextInt();
         return new Libro(titulo, autor, paginas);
     }
+
+    @Override
+    public String toString() {
+        return "Libro["+super.toString()+", "+getPaginas()+" páginas]";
+    }
 }

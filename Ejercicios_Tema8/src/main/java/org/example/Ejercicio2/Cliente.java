@@ -49,7 +49,7 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente n.º " + nCliente + " [" + nombre + "]";
+        return "Cliente[N.º " + getnCliente() + ", " + getNombre() + "]";
     }
 
 }

@@ -31,4 +31,9 @@ public class Video extends Obra{
         double duracion = sc.nextDouble();
         return new Video(titulo, autor, duracion);
     }
+
+    @Override
+    public String toString() {
+        return "Video["+super.toString()+", "+getDuracion()+" minutos]";
+    }
 }

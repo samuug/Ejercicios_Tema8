@@ -41,16 +41,19 @@ public class Main {
                         case 1:
                             obras.add(new Libro().crearLibro());
                             System.out.println("Libro [" + obras.get(contadorO-1).getTitulo() +"] añadido");
+                            contadorO++;
                             break;
                         case 2:
                             obras.add(new Video().crearVideo());
                             System.out.println("Video [" + obras.get(contadorO-1).getTitulo() +"] añadido");
+                            contadorO++;
                             break;
                     }
                     break;
                 case 4:
-                    new Pedido().crearPedido(new Cliente().buscarCliente(clientes), new Obra().buscarObra(obras));
+                    pedidos.add(new Pedido().crearPedido(new Cliente().buscarCliente(clientes), new Obra().buscarObra(obras)));
                     System.out.println("Pedido n.º " + contadorP + " añadido");
+                    contadorP++;
                     break;
                 case 5:
                     System.out.println("-- Pedidos --");

@@ -33,4 +33,9 @@ public class Pedido {
     public Pedido crearPedido(Cliente cliente, Obra obra){
         return new Pedido(cliente, obra);
     }
+
+    @Override
+    public String toString() {
+        return "Pedido[" + getCliente() + ", " + getObra() + "]";
+    }
 }
